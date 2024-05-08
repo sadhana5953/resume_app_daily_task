@@ -12,7 +12,7 @@ class _homescreenState extends State<homescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.blue),
+        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.red),
       ),
     );
   }

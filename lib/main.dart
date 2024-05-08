@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:resume_app_daily_task/Screens/utills/route.dart';
+import 'package:resume_app_daily_task/utills/route.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.red));
     SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
     return  MaterialApp(
       debugShowCheckedModeBanner:  false,
