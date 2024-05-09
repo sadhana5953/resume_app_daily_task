@@ -11,8 +11,10 @@ class _homescreenState extends State<homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(child: Column(children: [
+      ],),),
       appBar: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.red),
+        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.red), //leading: Icon(Icons.menu),
       ),
     );
   }
