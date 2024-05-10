@@ -1,3 +1,8 @@
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/96159164-0154-4ae5-817b-ccc344dbcca2" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/c4daf0ac-e0cf-4c27-837b-b0b62f94f890" height=22% width=35%>
+<video src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/409a1e8e-eda2-4bd3-8aaf-e3ca9cdc1780" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/83e9bdeb-73ad-47d4-b388-97be80e9968d" height=22% width=35%>
+
 # Resume App
 
 # What is List ? 
@@ -148,8 +153,5 @@ class _homescreenState extends State<homescreen> {
 }
 ````
 
-
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/c4d3582c-5bc3-4258-b61e-0d2bd575c490" height=22% width=35%>
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/41fccbe7-a37d-4130-8dbf-e4056ff1703a" height=22% width=35%>
 
 
