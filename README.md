@@ -1,3 +1,7 @@
+# Login Page
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/96159164-0154-4ae5-817b-ccc344dbcca2" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/c4daf0ac-e0cf-4c27-837b-b0b62f94f890" height=22% width=35%>
+<video src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/409a1e8e-eda2-4bd3-8aaf-e3ca9cdc1780" height=22% width=35%>
 
 # Resume App
 
@@ -148,12 +152,6 @@ class _homescreenState extends State<homescreen> {
   }
 }
 ````
-
-# Login Page
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/96159164-0154-4ae5-817b-ccc344dbcca2" height=22% width=35%>
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/c4daf0ac-e0cf-4c27-837b-b0b62f94f890" height=22% width=35%>
-<video src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/409a1e8e-eda2-4bd3-8aaf-e3ca9cdc1780" height=22% width=35%>
-
 # Drawer Page
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/d69ab547-465c-46da-9824-076ed3358ca8" height=22% width=35%>
 
