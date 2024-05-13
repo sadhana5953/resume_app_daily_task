@@ -24,7 +24,7 @@ class _Loginscreen1State extends State<Loginscreen1> {
             child: Container(
               height: 350,
               width: 350,
-              margin: EdgeInsets.only(top: 40,right: 35),
+              margin: EdgeInsets.only(top: 80,right: 35),
               decoration: BoxDecoration(
                 image: DecorationImage(fit: BoxFit.cover,image: AssetImage("assets/images/login.png")),
               ),
@@ -52,22 +52,22 @@ class _Loginscreen1State extends State<Loginscreen1> {
                 width: 170,
                 margin: EdgeInsets.only(left: 30),
                 decoration: BoxDecoration(
-                  color: Color(0xFF212121),
+                  border: Border.all(color: Colors.black,width: 2),
                   borderRadius: BorderRadius.circular(5)
                 ),
                 alignment: Alignment.center,
-                child: Text("LOGIN",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
+                child: Text("LOGIN",style: TextStyle(color: Colors.black87,fontSize: 18,fontWeight: FontWeight.bold),),
               ),
             ),Container(
               height: 50,
               width: 170,
               margin: EdgeInsets.only(left: 10),
               decoration: BoxDecoration(
-                  color: Color(0xFF212121),
+                  border: Border.all(color: Colors.black,width: 2),
                   borderRadius: BorderRadius.circular(5)
               ),
               alignment: Alignment.center,
-              child: Text("SIGNUP",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
+              child: Text("SIGNUP",style: TextStyle(color: Colors.black87,fontSize: 18,fontWeight: FontWeight.bold),),
             ),
           ],)
         ],
