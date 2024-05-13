@@ -1,22 +1,11 @@
-# Google validation
+# Google Validation
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/57fdf494-8d4d-4e3e-8afd-0dcb26a3a887" height=22% width=35%>
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/c6cda45b-5f35-44d9-9dd2-a1ae4e4e5309" height=22% width=35%>
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/114cb39b-d1fd-4021-b59a-ecc8ac3ac2b6" height=22% width=35%>
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/4deac935-b7bd-4c9e-866c-1d106abf00a2" height=22% width=35%>
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/cbdf772d-68ea-4264-8900-58bd26cd76a8" height=22% width=35%>
-<video src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/043de5b8-3f5d-43c0-86b3-ad86a324fcdc" height=22% width=35%>
-
-
-
-
-
-
-
-
-
 
 # Resume App
-
 # What is List ? 
 -  List is used to representing a collection of objects.
 - List is collection of multiple value of all data type.
