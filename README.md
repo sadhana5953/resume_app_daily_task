@@ -1,12 +1,3 @@
-# Google Validation
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/57fdf494-8d4d-4e3e-8afd-0dcb26a3a887" height=22% width=35%>
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/c6cda45b-5f35-44d9-9dd2-a1ae4e4e5309" height=22% width=35%>
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/114cb39b-d1fd-4021-b59a-ecc8ac3ac2b6" height=22% width=35%>
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/4deac935-b7bd-4c9e-866c-1d106abf00a2" height=22% width=35%>
-<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/cbdf772d-68ea-4264-8900-58bd26cd76a8" height=22% width=35%>
-<video src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/043de5b8-3f5d-43c0-86b3-ad86a324fcdc" height=35% width=22%>
-
-
 # Resume App
 # What is List ? 
 -  List is used to representing a collection of objects.
@@ -157,6 +148,14 @@ class _homescreenState extends State<homescreen> {
 ````
 # Drawer Page
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/d69ab547-465c-46da-9824-076ed3358ca8" height=22% width=35%>
+
+# Google Validation & SnackBar
+https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/7831a622-9486-4263-9d71-df6200502044
+
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/385564ec-3266-4d53-b010-1a51c1995d0b" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/79dde5e6-0bf2-4661-a6b6-02e4acf2a39c" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/4e4a8dfa-cfa9-4a1a-9722-435123cc0102" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/4125ef77-6bd1-4bac-84d6-f35b1b5e6d69" height=22% width=35%>
 
 # Login Page
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/96159164-0154-4ae5-817b-ccc344dbcca2" height=22% width=35%>
