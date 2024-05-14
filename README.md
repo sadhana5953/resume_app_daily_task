@@ -149,7 +149,7 @@ class _homescreenState extends State<homescreen> {
 # Drawer Page
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/d69ab547-465c-46da-9824-076ed3358ca8" height=22% width=35%>
 
-# Google Validation
+# Google Validation & SnackBar
 https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/7831a622-9486-4263-9d71-df6200502044
 
 <img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/385564ec-3266-4d53-b010-1a51c1995d0b" height=22% width=35%>
