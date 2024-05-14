@@ -47,7 +47,7 @@ class _secondPageState extends State<secondPage> {
                   children: [
                     Container(
                       width: 400,
-                      height: 65,
+                      height: 70,
                       padding: EdgeInsets.only(right: 5),
                       margin: EdgeInsets.only(top: 50,),
                       child: TextFormField(
@@ -63,23 +63,23 @@ class _secondPageState extends State<secondPage> {
                         {
                           if(value!.isEmpty)
                           {
-                            return 'Enter a password';
+                            return 'Enter a password!';
                           }
                           else if(value.length<=8)
                             {
-                              return 'The password  have grater than 8 character';
+                              return 'Wrong password. Try again or click Forgot password to reset it!';
                             }
                           else if(value.contains(' '))
                             {
-                              return 'space is not allow';
+                              return 'Space is not allowed!';
                             }
                           else if(value == value.toUpperCase())
                             {
-                              return 'Enter atleast one character in small later.';
+                              return 'Enter one character in small later!';
                             }
                           else if(value == value.toLowerCase())
                             {
-                              return 'Enter atleast one character in capital later.';
+                              return 'Enter one character in capital later!';
                             }
                           int check=0;
                           for(int i=0;i<10;i++)
@@ -92,17 +92,28 @@ class _secondPageState extends State<secondPage> {
                           if(check==0)
                             {
                               check=0;
-                              return 'enter a number';
+                              return 'Enter a number!';
                             }
                           int ch=0;
-                          for (int codePoint = startCodePoint; codePoint < endCodePoint; codePoint++) {
-                            print(String.fromCharCode(codePoint));
-                            if(value.contains(String.fromCharCode(codePoint)))
-                              {
-                                ch++;
-                              }
+                          for (int code = Start; code < End; code++) {
+                            if(!value.contains(String.fromCharCode(code)))
+                            {
+                              ch++;
+                            }
                           }
+                          int ck=0;
+                          for (int code = start; code < end; code++) {
+                            if(!value.contains(String.fromCharCode(code)))
+                            {
+                              ck++;
+                            }
+                          }
+                          if(ck==7 && ch==15)
+                            {
+                              return 'Enter a character!';
+                            }
                         },
+
                       ),
                     ),
                     Row(
@@ -119,11 +130,12 @@ class _secondPageState extends State<secondPage> {
                             width: 20,
                             margin: EdgeInsets.only(left: 5),
                             decoration: BoxDecoration(
-                              border: Border.all(width: 1,color: Colors.grey.shade800),
-                              borderRadius: BorderRadius.circular(5),
+                              color: _password?Colors.white:Colors.blue,
+                              border: _password?Border.all(width: 1,color: Colors.grey.shade800):Border(),
+                              borderRadius: BorderRadius.circular(3),
                             ),
                             alignment: Alignment.center,
-                            child: Text(_password? ' ':'✔'),
+                            child: Text(_password? ' ':'✔',style: TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.w100),),
                           ),
                         ),
                         Text("   Show password",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),

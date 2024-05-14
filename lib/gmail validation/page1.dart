@@ -46,8 +46,8 @@ class _firstPageState extends State<firstPage> {
                   children: [
                   Container(
                     width: 400,
-                    height: 65,
-                    margin: EdgeInsets.only(top: 35),
+                    height: 70,
+                    margin: EdgeInsets.only(top: 30),
                     child: TextFormField(
                       controller: txtEMAIL,
                       decoration: InputDecoration(
@@ -58,32 +58,30 @@ class _firstPageState extends State<firstPage> {
                       ),
                       validator: (value)
                       {
-                        if(value!.isEmpty)
+                        String gmail='@gmail.com';
+                        if(value!.isEmpty ||value== null)
                           {
-                            return 'Enter an email or phone number';
+                            return 'Enter an email or phone number!';
                           }
+                        else if(value.startsWith('@gmail.com'))
+                        {
+                          return 'Enter your name!';
+                        }
                         else if(!value.contains('@gmail.com'))
                           {
-                            if(!value.contains('@'))
-                              {
-                                return 'Enter @';
-                              }
-                            else if(!value.contains('gmail.com'))
-                              {
-                                return 'enter gmail.com';
-                              }
-                            else
-                              {
-                                return 'enter @gmail.com';
-                              }
+                            return 'Enter "@gmail.com" !';
                           }
+                        else if(!value.endsWith('@gmail.com'))
+                        {
+                          return 'Enter "@gmail.com" in last!';
+                        }
                         else if(value.contains(' '))
                           {
-                            return 'space is not allow';
+                            return 'Space is not allowed!';
                           }
                         else if(value != value.toLowerCase())
                           {
-                            return 'Please enter only lowercase letters';
+                            return 'Please enter only lowercase letters!';
                           }
                       },
                     ),

@@ -10,6 +10,13 @@ class Loginscreen1 extends StatefulWidget {
 }
 
 class _Loginscreen1State extends State<Loginscreen1> {
+  bool check=true;
+  void _background()
+  {
+    setState(() {
+      check= !check;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +52,7 @@ class _Loginscreen1State extends State<Loginscreen1> {
             children: [
             GestureDetector(
               onTap: (){
+                _background();
                 Navigator.of(context).pushNamed('/login2');
               },
               child: Container(
@@ -52,22 +60,23 @@ class _Loginscreen1State extends State<Loginscreen1> {
                 width: 170,
                 margin: EdgeInsets.only(left: 30),
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black,width: 2),
+                  color: check?Colors.black:null,
+                    border: check?null:Border.all(color: Colors.black,width: 2),
                   borderRadius: BorderRadius.circular(5)
                 ),
                 alignment: Alignment.center,
-                child: Text("LOGIN",style: TextStyle(color: Colors.black87,fontSize: 18,fontWeight: FontWeight.bold),),
+                child: Text("LOGIN",style: TextStyle(color: check?Colors.white:Colors.black87,fontSize: 18,fontWeight: FontWeight.bold),),
               ),
             ),Container(
               height: 50,
               width: 170,
               margin: EdgeInsets.only(left: 10),
               decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black,width: 2),
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(5)
               ),
               alignment: Alignment.center,
-              child: Text("SIGNUP",style: TextStyle(color: Colors.black87,fontSize: 18,fontWeight: FontWeight.bold),),
+              child: Text("SIGNUP",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
             ),
           ],)
         ],

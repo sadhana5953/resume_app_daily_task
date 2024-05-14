@@ -1,4 +1,6 @@
 String email='';
 String password='';
-int startCodePoint = 33; // ASCII value for '!'
-int endCodePoint = 48;   // ASCII value for '@'
+int Start = 33; // ASCII value for '!'
+int End = 48;
+int start = 58; // ASCII value for '!'
+int end = 65;  // ASCII value for '@'

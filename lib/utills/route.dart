@@ -13,5 +13,6 @@ class AppRoutes {
     '/gmail3': (context) => loginPage3(),
     '/login1': (context) => Loginscreen1(),
     '/login2': (context) => loginScreen2(),
+    '/home': (context) => homescreen(),
   };
 }
