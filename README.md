@@ -170,7 +170,17 @@ https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/7831a622-9
 
 https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/68bb5c4c-6f6a-474a-8adc-43ae03f4b626
 
-<img src="" height=22% width=35%>
+# Id Card Registration
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/bdb2505a-0ff7-4faf-98bb-c29bf9d510ea" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/e8450d55-3d92-4d62-bc73-1ba4d90b4cfd" height=22% width=35%>
 
+
+
+
+https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/e1852b34-5261-491d-99be-c35d68433f32
+
+# Dynamic Text Field
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/abfe5a0f-821c-4701-b448-b5d45184f990" height=22% width=35%>
+<img src="https://github.com/sadhana5953/resume_app_daily_task/assets/148869257/306ea4c2-609a-485e-b1e0-28fa8df490a5" height=22% width=35%>
 
 
