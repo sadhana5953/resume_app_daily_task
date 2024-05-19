@@ -19,10 +19,14 @@ class _imagepickerState extends State<imagepicker> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: CupertinoColors.activeBlue),
+        systemOverlayStyle:
+            SystemUiOverlayStyle(statusBarColor: CupertinoColors.activeBlue),
         backgroundColor: Colors.blue,
         toolbarHeight: 60,
-        title: Text('Image Picker',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500),),
+        title: Text(
+          'Image Picker',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+        ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -32,30 +36,50 @@ class _imagepickerState extends State<imagepicker> {
             width: 300,
             decoration: BoxDecoration(
               color: Colors.grey,
-              image: (fileImage==null)?DecorationImage(image: AssetImage('assets/images/person.png'),fit: BoxFit.cover):DecorationImage(image: FileImage(fileImage!),fit: BoxFit.cover),
+              image: (fileImage == null)
+                  ? DecorationImage(
+                      image: AssetImage('assets/images/person.png'),
+                      fit: BoxFit.cover)
+                  : DecorationImage(
+                      image: FileImage(fileImage!), fit: BoxFit.cover),
             ),
           ),
-        // CircleAvatar(
-        //   radius: 100,
-        //   backgroundColor: Colors.grey,
-        //   backgroundImage:(fileImage==null)?null:FileImage(fileImage!),
-        // ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-          IconButton(onPressed: () async {
-            XFile? imagePath = await imagePicker.pickImage(source: ImageSource.camera);
-            setState(() {
-              fileImage = File(imagePath!.path);
-            });
-          }, icon: Icon(Icons.camera_alt,size: 50,color: Colors.black,)),
-          IconButton(onPressed: () async {
-            XFile? imagePath = await imagePicker.pickImage(source: ImageSource.gallery);
-            setState(() {
-              fileImage = File(imagePath!.path);
-            });
-          }, icon: Icon(Icons.image,size: 50,color: Colors.black,)),
-        ],),
+          // CircleAvatar(
+          //   radius: 100,
+          //   backgroundColor: Colors.grey,
+          //   backgroundImage:(fileImage==null)?null:FileImage(fileImage!),
+          // ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                  onPressed: () async {
+                    XFile? imagePath =
+                        await imagePicker.pickImage(source: ImageSource.camera);
+                    setState(() {
+                      fileImage = File(imagePath!.path);
+                    });
+                  },
+                  icon: Icon(
+                    Icons.camera_alt,
+                    size: 50,
+                    color: Colors.black,
+                  )),
+              IconButton(
+                  onPressed: () async {
+                    XFile? imagePath = await imagePicker.pickImage(
+                        source: ImageSource.gallery);
+                    setState(() {
+                      fileImage = File(imagePath!.path);
+                    });
+                  },
+                  icon: Icon(
+                    Icons.image,
+                    size: 50,
+                    color: Colors.black,
+                  )),
+            ],
+          ),
           Container(
             height: 40,
             width: 350,
@@ -65,9 +89,16 @@ class _imagepickerState extends State<imagepicker> {
               borderRadius: BorderRadius.circular(5),
             ),
             alignment: Alignment.center,
-            child: Text('Upload Me',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 18),),
+            child: Text(
+              'Upload Me',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18),
+            ),
           ),
-      ],),
+        ],
+      ),
     );
   }
 }

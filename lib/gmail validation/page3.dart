@@ -85,7 +85,9 @@ class _loginPage3State extends State<loginPage3> {
                               ),
                               backgroundColor: Colors.blue,
                               action: SnackBarAction(
-                                  label: 'Undo',textColor: Colors.white, onPressed: () {}),
+                                  label: 'Undo',
+                                  textColor: Colors.white,
+                                  onPressed: () {}),
                             ));
                           },
                           child: Container(

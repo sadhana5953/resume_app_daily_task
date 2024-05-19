@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../utills/global_var.dart';
+
 class firstPage extends StatefulWidget {
   const firstPage({super.key});
 
@@ -26,7 +27,7 @@ class _firstPageState extends State<firstPage> {
           child: Container(
             height: 300,
             width: 850,
-            padding: EdgeInsets.symmetric(vertical: 25,horizontal: 22),
+            padding: EdgeInsets.symmetric(vertical: 25, horizontal: 22),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(23),
               color: Colors.white,
@@ -37,89 +38,134 @@ class _firstPageState extends State<firstPage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                  Image(image: AssetImage("assets/images/icon.png"),width: 50,height: 50,),
-                    Text(" Sign in",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.w500)),
-                    Text("\n   Use your Google Account",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Colors.grey.shade800),),
-                ],),
+                    Image(
+                      image: AssetImage("assets/images/icon.png"),
+                      width: 50,
+                      height: 50,
+                    ),
+                    Text(" Sign in",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500)),
+                    Text(
+                      "\n   Use your Google Account",
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey.shade800),
+                    ),
+                  ],
+                ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                  Container(
-                    width: 400,
-                    height: 70,
-                    margin: EdgeInsets.only(top: 30),
-                    child: TextFormField(
-                      controller: txtEMAIL,
-                      decoration: InputDecoration(
-                        focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(5),borderSide: BorderSide(color: Colors.black87,width: 2)),
-                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(5),borderSide: BorderSide(color: Colors.black87,width: 1)),
-                        labelText: 'Email or phone',
-                        labelStyle: TextStyle(color: Colors.grey.shade800,fontSize: 13,fontWeight: FontWeight.bold),
-                      ),
-                      validator: (value)
-                      {
-                        String gmail='@gmail.com';
-                        if(value!.isEmpty ||value== null)
-                          {
+                    Container(
+                      width: 400,
+                      height: 70,
+                      margin: EdgeInsets.only(top: 30),
+                      child: TextFormField(
+                        controller: txtEMAIL,
+                        decoration: InputDecoration(
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(5),
+                              borderSide:
+                                  BorderSide(color: Colors.black87, width: 2)),
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(5),
+                              borderSide:
+                                  BorderSide(color: Colors.black87, width: 1)),
+                          labelText: 'Email or phone',
+                          labelStyle: TextStyle(
+                              color: Colors.grey.shade800,
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        validator: (value) {
+                          String gmail = '@gmail.com';
+                          if (value!.isEmpty || value == null) {
                             return 'Enter an email or phone number!';
-                          }
-                        else if(value.startsWith('@gmail.com'))
-                        {
-                          return 'Enter your name!';
-                        }
-                        else if(!value.contains('@gmail.com'))
-                          {
+                          } else if (value.startsWith('@gmail.com')) {
+                            return 'Enter your name!';
+                          } else if (!value.contains('@gmail.com')) {
                             return 'Enter "@gmail.com" !';
-                          }
-                        else if(!value.endsWith('@gmail.com'))
-                        {
-                          return 'Enter "@gmail.com" in last!';
-                        }
-                        else if(value.contains(' '))
-                          {
+                          } else if (!value.endsWith('@gmail.com')) {
+                            return 'Enter "@gmail.com" in last!';
+                          } else if (value.contains(' ')) {
                             return 'Space is not allowed!';
-                          }
-                        else if(value != value.toLowerCase())
-                          {
+                          } else if (value != value.toLowerCase()) {
                             return 'Please enter only lowercase letters!';
                           }
-                      },
+                        },
+                      ),
                     ),
-                  ),
-                  Text('\n  Forgot email?',style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 12),),
-                    RichText(text: TextSpan(children: [
-                      TextSpan(text: '\n\n  Not your computer? Use Guest mode to sign in privately. ',style: TextStyle(color: Colors.grey.shade700,fontSize: 12,fontWeight: FontWeight.bold)),
-                      TextSpan(text: 'Learn more\n\n\n',style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 12)),
+                    Text(
+                      '\n  Forgot email?',
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12),
+                    ),
+                    RichText(
+                        text: TextSpan(children: [
+                      TextSpan(
+                          text:
+                              '\n\n  Not your computer? Use Guest mode to sign in privately. ',
+                          style: TextStyle(
+                              color: Colors.grey.shade700,
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold)),
+                      TextSpan(
+                          text: 'Learn more\n\n\n',
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12)),
                     ])),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        SizedBox(width: 200,),
-                      Text("Create account           ",style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 11),),
-                     GestureDetector(
-                       onTap: (){
-                         bool response = formkey.currentState!.validate();
-                         if(response)
-                         {
-                           Navigator.of(context).pushNamed('/gmail2');
-                           email=txtEMAIL.text;
-                         }
-                       },
-                       child: Container(height: 30,
-                       width: 65,
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(30),
-                         color: Colors.blue.shade700,
-                       ),
-                       alignment: Alignment.center,
-                       child: Text('Next',style: TextStyle(color: Colors.white,fontSize: 11),),),
-                     )
-                     // ElevatedButton(onPressed: (){}, child: Text('Next',style: TextStyle(color: Colors.white),),style: ButtonStyle(
-                     //   backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlue.shade800), // Change background color here
-                     //   minimumSize: MaterialStateProperty.all<Size>(Size(5, 40)), // Change background color here
-                     // ),),
-                    ],)
-                ],)
+                        SizedBox(
+                          width: 200,
+                        ),
+                        Text(
+                          "Create account           ",
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 11),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            bool response = formkey.currentState!.validate();
+                            if (response) {
+                              Navigator.of(context).pushNamed('/gmail2');
+                              email = txtEMAIL.text;
+                            }
+                          },
+                          child: Container(
+                            height: 30,
+                            width: 65,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              color: Colors.blue.shade700,
+                            ),
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Next',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 11),
+                            ),
+                          ),
+                        )
+                        // ElevatedButton(onPressed: (){}, child: Text('Next',style: TextStyle(color: Colors.white),),style: ButtonStyle(
+                        //   backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlue.shade800), // Change background color here
+                        //   minimumSize: MaterialStateProperty.all<Size>(Size(5, 40)), // Change background color here
+                        // ),),
+                      ],
+                    )
+                  ],
+                )
               ],
             ),
           ),

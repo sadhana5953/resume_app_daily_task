@@ -10,13 +10,14 @@ class Loginscreen1 extends StatefulWidget {
 }
 
 class _Loginscreen1State extends State<Loginscreen1> {
-  bool check=true;
-  void _background()
-  {
+  bool check = true;
+
+  void _background() {
     setState(() {
-      check= !check;
+      check = !check;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,9 +32,11 @@ class _Loginscreen1State extends State<Loginscreen1> {
             child: Container(
               height: 350,
               width: 350,
-              margin: EdgeInsets.only(top: 80,right: 35),
+              margin: EdgeInsets.only(top: 80, right: 35),
               decoration: BoxDecoration(
-                image: DecorationImage(fit: BoxFit.cover,image: AssetImage("assets/images/login.png")),
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage("assets/images/login.png")),
               ),
             ),
           ),
@@ -50,35 +53,49 @@ class _Loginscreen1State extends State<Loginscreen1> {
                   fontSize: 15)),
           Row(
             children: [
-            GestureDetector(
-              onTap: (){
-                _background();
-                Navigator.of(context).pushNamed('/login2');
-              },
-              child: Container(
+              GestureDetector(
+                onTap: () {
+                  _background();
+                  Navigator.of(context).pushNamed('/login2');
+                },
+                child: Container(
+                  height: 50,
+                  width: 170,
+                  margin: EdgeInsets.only(left: 30),
+                  decoration: BoxDecoration(
+                      color: check ? Colors.black : null,
+                      border: check
+                          ? null
+                          : Border.all(color: Colors.black, width: 2),
+                      borderRadius: BorderRadius.circular(5)),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "LOGIN",
+                    style: TextStyle(
+                        color: check ? Colors.white : Colors.black87,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              Container(
                 height: 50,
                 width: 170,
-                margin: EdgeInsets.only(left: 30),
+                margin: EdgeInsets.only(left: 10),
                 decoration: BoxDecoration(
-                  color: check?Colors.black:null,
-                    border: check?null:Border.all(color: Colors.black,width: 2),
-                  borderRadius: BorderRadius.circular(5)
-                ),
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(5)),
                 alignment: Alignment.center,
-                child: Text("LOGIN",style: TextStyle(color: check?Colors.white:Colors.black87,fontSize: 18,fontWeight: FontWeight.bold),),
+                child: Text(
+                  "SIGNUP",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),Container(
-              height: 50,
-              width: 170,
-              margin: EdgeInsets.only(left: 10),
-              decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(5)
-              ),
-              alignment: Alignment.center,
-              child: Text("SIGNUP",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
-            ),
-          ],)
+            ],
+          )
         ],
       ),
     );
