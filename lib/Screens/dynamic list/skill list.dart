@@ -76,6 +76,11 @@ class _skillPage1State extends State<skillPage1> {
       floatingActionButton: FilledButton(
         child: Icon(Icons.show_chart),
         onPressed: () {
+         // skill=listOfSkill[0].text;
+          for(int i=0;i<listOfSkill.length;i++)
+            {
+              skill=skill+listOfSkill[i].text;
+            }
           Navigator.of(context).pushNamed('/skill');
         },
       ),
@@ -85,3 +90,4 @@ class _skillPage1State extends State<skillPage1> {
 
 TextEditingController txtSkill = TextEditingController();
 List listOfSkill = [txtSkill];
+String skill='';

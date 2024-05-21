@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resume_app_daily_task/Screens/Invoice%20Generator/pdf.dart';
+import 'package:resume_app_daily_task/Screens/Invoice%20Generator/pdf_generator.dart';
 import 'package:resume_app_daily_task/Screens/dynamic%20list/skill%20list.dart';
 import 'package:resume_app_daily_task/Screens/dynamic%20list/skill.dart';
 import 'package:resume_app_daily_task/Screens/homePage/homeScreen.dart';
@@ -14,7 +16,10 @@ import 'package:resume_app_daily_task/gmail%20validation/page3.dart';
 
 class AppRoutes {
   static Map<String, Widget Function(BuildContext)> routes = {
-    '/': (context) => skillPage1(),
+    '/': (context) => Pdf(),
+    '/pdf': (context) => Pdf(),
+    '/print': (context) => printPdf(),
+    '/skillList': (context) => skillPage1(),
     '/skill': (context) => skillPage2(),
     '/ID': (context) => idCard(),
     '/id': (context) => idCard2(),
